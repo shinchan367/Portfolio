@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me Form</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+</head>
+<style>
+
+    * {
+    margin: 0;
+    padding: 0;
+    font-family: "General Sans";
+    box-sizing: border-box;
+    color: white;
+    background-color: black;
+}
+
+body {
+    height: 100%;
+}
+
+#minicircle {
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    z-index: 99999;
+    border-radius: 50%;
+    background-color: #fff;
+}
+
+#main {
+    width: 100%;
+    position: relative;
+}
+
+#form{
+    text-align: center;
+    
+}
+</style>
+<body>
+    <div id ="minicircle"></div>
+    <div id="main">
+        <div id="form" style ="margin-bottom: 400px;">
+<form action="https://api.web3forms.com/submit" method="POST">
+
+    <input type="hidden" name="access_key" value="b152a6de-10d4-4b01-9ba3-d969ba6aaff8">
+
+    <label for="name" style="font-size:50px;">Name:</label>
+    <input type="text" name="name" id="name" required>
+
+    <label for="email"style="font-size:50px;">Email:</label>
+    <input type="email" name="email" id="email" required>
+
+    <label for="message"style="font-size:50px;">Message:</label>
+    <textarea name="message" id="message" required></textarea>
+
+    <div class="h-captcha" data-captcha="true"></div>
+    <button type="submit">Submit Form</button>
+
+</form>
+</div>
+<script src="https://web3forms.com/client/script.js" async defer></script>
+<script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

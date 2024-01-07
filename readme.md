@@ -1,0 +1,1 @@
+javascript ||----->scrip.js and loco.css imported from github repo fot smooth scrolling effect
